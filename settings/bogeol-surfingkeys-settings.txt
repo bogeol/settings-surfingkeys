@@ -1,0 +1,91 @@
+// an example to create a new mapping `ctrl-y`
+mapkey('<Ctrl-y>', 'Show me the money', function() {
+    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+});
+// g -> github
+mapkey('og', '#8Open Search with alias g', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "g"});
+});
+// o -> google
+mapkey('oo', '#8Open Search with alias o', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "o"});
+});
+// s -> stackoverflow
+mapkey('os', '#8Open Search with alias s', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "s"});
+});
+// t -> google translate
+mapkey('ot', '#8Open Search with alias t', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "t"});
+});
+addSearchAliasX('t', 'translate', 'https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=en&tl=zh-CN&text=');
+addSearchAliasX('g', 'github', 'https://github.com/search?type=Repositories&q=');
+addSearchAliasX('o', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
+    var res = JSON.parse(response.text);
+    return res[1];
+});
+//-----------------------------------------------------------------------------
+
+// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
+map('gt', 'T');
+
+//1. J:forward history [new] K:backward history [old]
+map('J', 'D');
+map('K', 'S');
+
+//2.H:left tab L:right tab
+map('H', 'E');
+map('L', 'R');
+
+//3.st: search with google translate
+map('st',';t');
+
+
+
+
+// an example to remove mapkey `Ctrl-i`
+unmap('<Ctrl-i>');
+unmap('R');
+unmap('E');
+unmap('S');
+unmap('D');
+
+// set theme
+settings.theme = `
+.sk_theme {
+    font-family: Input Sans Condensed, Charcoal, sans-serif;
+    font-size: 10pt;
+    background: #24272e;
+    color: #abb2bf;
+}
+.sk_theme tbody {
+    color: #fff;
+}
+.sk_theme input {
+    color: #d0d0d0;
+}
+.sk_theme .url {
+    color: #61afef;
+}
+.sk_theme .annotation {
+    color: #56b6c2;
+}
+.sk_theme .omnibar_highlight {
+    color: #528bff;
+}
+.sk_theme .omnibar_timestamp {
+    color: #e5c07b;
+}
+.sk_theme .omnibar_visitcount {
+    color: #98c379;
+}
+.sk_theme #sk_omnibarSearchResult>ul>li:nth-child(odd) {
+    background: #303030;
+}
+.sk_theme #sk_omnibarSearchResult>ul>li.focused {
+    background: #3e4452;
+}
+#sk_status, #sk_find {
+    font-size: 20pt;
+}`;
+// click `Save` button to make above settings to take effect.
