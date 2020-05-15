@@ -6,8 +6,8 @@
 
 ## 一、简单配置
 
-- 安装 -> 左键Surfingkeys插件 -> Settings -> Key mappings -> Advanced mode
-- Loading settings from -> [SETTINGS](https://raw.githubusercontent.com/bogeol/surfingkeys-settings-backup/master/settings/bogeol-surfingkeys-settings.txt)
+- 安装Surfingkeys插件 -> 左键点击插件 -> Settings -> Key mappings -> Advanced mode
+- Loading settings from -> [Settings.txt](https://raw.githubusercontent.com/bogeol/surfingkeys-settings-backup/master/settings/bogeol-surfingkeys-settings.txt)
 - 把上面链接复制进去 -> Save
 
 ## 二、常用按键
@@ -24,16 +24,16 @@
 |  d   | scroll **d**own | &lt;PG DN&gt; |
 |  gg  |  scroll to top  | &lt;HOME&gt;  |
 |  G   |  scroll to end  |  &lt;END&gt;  |
-|  r   |   **r**efresh   |   <Ctrl-R>    |
+|  r   |   **r**efresh   |    Ctrl-R     |
 
 ### 2.Move Tab
 
-| 按键 |    功能    |       备注       |
-| :--: | :--------: | :--------------: |
-|  H   |  left tab  | <Ctrl-Shift-Tab> |
-|  L   | right tab  |    <Ctrl-Tab>    |
-|  x   | close tab  |     <Ctrl-W>     |
-|  X   | reopen tab |  <Ctrl-Shift-T>  |
+| 按键 |    功能    |      备注      |
+| :--: | :--------: | :------------: |
+|  H   |  left tab  | Ctrl-Shift-Tab |
+|  L   | right tab  |    Ctrl-Tab    |
+|  x   | close tab  |     Ctrl-W     |
+|  X   | reopen tab |  Ctrl-Shift-T  |
 
 ### 3.Move History
 
@@ -78,21 +78,13 @@
 ### 2.打开浏览器内置功能
 
 - `ga` About
-
 - `gb` Bookmark
-
 - `gc` Cache
-
 - `gd` Download
-
 - `gh` History
-
 - `gk` Cookie
-
 - `ge` Extension
-
 - `gn` Net-Internal
-
 - `gs` Source
 
 ### 3.会话
