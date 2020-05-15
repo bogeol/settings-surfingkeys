@@ -14,26 +14,26 @@
 
 ### 1.Move Page
 
-| 按键 |      功能       |     备注      |
-| :--: | :-------------: | :-----------: |
-|  h   |      left       |       ←       |
-|  j   |      down       |       ↓       |
-|  k   |       up        |       ↑       |
-|  l   |      right      |       →       |
-|  u   |  scroll **u**p  | &lt;PG UP&gt; |
-|  d   | scroll **d**own | &lt;PG DN&gt; |
-|  gg  |  scroll to top  | &lt;HOME&gt;  |
-|  G   |  scroll to end  |  &lt;END&gt;  |
-|  r   |   **r**efresh   |    Ctrl-R     |
+| 按键 |      功能       |   备注   |
+| :--: | :-------------: | :------: |
+|  h   |      left       |    ←     |
+|  j   |      down       |    ↓     |
+|  k   |       up        |    ↑     |
+|  l   |      right      |    →     |
+|  u   |  scroll **u**p  | [PG UP]  |
+|  d   | scroll **d**own | [PG DN]  |
+|  gg  |  scroll to top  |  [HOME]  |
+|  G   |  scroll to end  |  [END]   |
+|  r   |   **r**efresh   | [Ctrl+R] |
 
 ### 2.Move Tab
 
-| 按键 |    功能    |      备注      |
-| :--: | :--------: | :------------: |
-|  H   |  left tab  | Ctrl-Shift-Tab |
-|  L   | right tab  |    Ctrl-Tab    |
-|  x   | close tab  |     Ctrl-W     |
-|  X   | reopen tab |  Ctrl-Shift-T  |
+| 按键 |    功能    |       备注       |
+| :--: | :--------: | :--------------: |
+|  H   |  left tab  | [Ctrl+Shift+Tab] |
+|  L   | right tab  |    [Ctrl+Tab]    |
+|  x   | close tab  |     [Ctrl+W]     |
+|  X   | reopen tab |  [Ctrl+Shift+T]  |
 
 ### 3.Move History
 
