@@ -2,9 +2,9 @@
 
 官方介绍：Rich shortcuts to click links/switch tabs/scroll pages or capture full page, use your browser like vim for productivity.A Chrome extension for Vim users, but EMACS users would also love it, as it is much extendable with javascript.
 
-简而言之：就是用键盘快捷键更方便的操作浏览器，以及自定义扩展功能。
+简而言之：就是用键盘更方便的操作浏览器，以及自定义扩展功能。
 
-## 一、简单配置
+## 一、安装配置
 
 - 安装Surfingkeys插件 -> 左键点击插件 -> Settings -> Key mappings -> Advanced mode
 - Loading settings from -> [Settings.txt](https://raw.githubusercontent.com/bogeol/surfingkeys-settings-backup/master/settings/bogeol-surfingkeys-settings.txt)
