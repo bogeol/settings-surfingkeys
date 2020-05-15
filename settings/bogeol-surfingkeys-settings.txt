@@ -1,4 +1,5 @@
-// an example to create a new mapping `ctrl-y`
+//-------------------------------------------------------
+// CREATE MAPKEY
 mapkey('<Ctrl-y>', 'Show me the money', function() {
     Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
@@ -18,15 +19,26 @@ mapkey('os', '#8Open Search with alias s', function() {
 mapkey('ot', '#8Open Search with alias t', function() {
     Front.openOmnibar({type: "SearchEngine", extra: "t"});
 });
+
 addSearchAliasX('t', 'translate', 'https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=en&tl=zh-CN&text=');
 addSearchAliasX('g', 'github', 'https://github.com/search?type=Repositories&q=');
 addSearchAliasX('o', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
     var res = JSON.parse(response.text);
     return res[1];
 });
-//-----------------------------------------------------------------------------
 
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
+function openGoogleTranslate2() {
+    if (window.getSelection().toString()) {
+        searchSelectedWith('https://translate.google.com/?hl=en#view=home&op=translate&sl=auto&tl=zh-CN&text=', false, false, '');
+    } else {
+        tabOpenLink("https://translate.google.com/?hl=en#view=home&op=translate&sl=auto&tl=zh-CN&text=" + window.location.href);
+    }
+}
+mapkey('st', 'Translate selected text with google translate', openGoogleTranslate2);
+
+
+//-----------------------------------------------------------------------------
+// REPLACE MAPKEY
 map('gt', 'T');
 
 //1. J:forward history [new] K:backward history [old]
@@ -38,19 +50,18 @@ map('H', 'E');
 map('L', 'R');
 
 //3.st: search with google translate
-map('st',';t');
+//map('st',';t');
 
-
-
-
-// an example to remove mapkey `Ctrl-i`
+//-----------------------------------------------------------------------
+// REMOVE MAPKEY
 unmap('<Ctrl-i>');
 unmap('R');
 unmap('E');
 unmap('S');
 unmap('D');
+unmap(";t");
 
-// set theme
+// SET THEME
 settings.theme = `
 .sk_theme {
     font-family: Input Sans Condensed, Charcoal, sans-serif;
