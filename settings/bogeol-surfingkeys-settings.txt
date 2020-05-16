@@ -3,13 +3,13 @@
 mapkey('<Ctrl-y>', 'Show me the money', function() {
     Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
-// g -> github
-mapkey('og', '#8Open Search with alias g', function() {
-    Front.openOmnibar({type: "SearchEngine", extra: "g"});
+// github -> github
+mapkey('og', '#8Open Search with alias github', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "github"});
 });
-// o -> google
+// g -> google
 mapkey('oo', '#8Open Search with alias o', function() {
-    Front.openOmnibar({type: "SearchEngine", extra: "o"});
+    Front.openOmnibar({type: "SearchEngine", extra: "g"});
 });
 // s -> stackoverflow
 mapkey('os', '#8Open Search with alias s', function() {
@@ -20,9 +20,15 @@ mapkey('ot', '#8Open Search with alias t', function() {
     Front.openOmnibar({type: "SearchEngine", extra: "t"});
 });
 
+//情况：之前t快捷键的搜索引擎变成了github，一脸懵逼
+//解决：alias github -> github | alias g -> google
+//原因1：快捷键t -> 获取历史、书签、网站 -> 如果不匹配就调用alias g的搜索引擎
+//原因2：runtime.js -> conf -> defaultSearchEngine: "g",所以默认搜索引擎为alias g的指定
+//日常使用：直接快捷键t当快捷键oo -> google search bar
+
 addSearchAliasX('t', 'translate', 'https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=en&tl=zh-CN&text=');
-addSearchAliasX('g', 'github', 'https://github.com/search?type=Repositories&q=');
-addSearchAliasX('o', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
+addSearchAliasX('github', 'github', 'https://github.com/search?type=Repositories&q=');
+addSearchAliasX('g', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
     var res = JSON.parse(response.text);
     return res[1];
 });
