@@ -4,18 +4,17 @@
 mapkey('<Ctrl-y>', 'Show me the money', function() {
     Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
-// og -> Open Github bar(alias github)
-mapkey('og', '#8Open Search with alias github', function() {
-    Front.openOmnibar({type: "SearchEngine", extra: "github"});
+
+//oh -> Open gitHub bar(alias github)
+mapkey('oh', '#8Open Search with alias github', function() {
+    Front.openOmnibar({type: "SearchEngine", extra: "h"});
 });
-// oo -> Open goOgle bar(alias g)
-mapkey('oo', '#8Open Search with alias o', function() {
-    Front.openOmnibar({type: "SearchEngine", extra: "g"});
-});
+
 // os -> Open Stackoverflow bar(alias s)
 mapkey('os', '#8Open Search with alias s', function() {
     Front.openOmnibar({type: "SearchEngine", extra: "s"});
 });
+
 // ot -> Open google Translate bar(alias t)
 mapkey('ot', '#8Open Search with alias t', function() {
     Front.openOmnibar({type: "SearchEngine", extra: "t"});
@@ -28,11 +27,8 @@ mapkey('ot', '#8Open Search with alias t', function() {
 //日常使用：直接快捷键t当快捷键oo -> google search bar
 
 addSearchAliasX('t', 'translate', 'https://translate.google.com/?hl=en&tab=TT#view=home&op=translate&sl=en&tl=zh-CN&text=');
-addSearchAliasX('github', 'github', 'https://github.com/search?type=Repositories&q=');
-addSearchAliasX('g', 'google', 'https://www.google.com/search?q=', 's', 'https://www.google.com/complete/search?client=chrome-omni&gs_ri=chrome-ext&oit=1&cp=1&pgcl=7&q=', function(response) {
-    var res = JSON.parse(response.text);
-    return res[1];
-});
+addSearchAliasX('h', 'github', 'https://github.com/search?type=Repositories&q=');
+
 
 //参考原来的函数function openGoogleTranslate(){}
 //这里的翻译可以自行修改参数，比如 [ 自动->中文 | 英文->中文 | 中文->英文 ] 
@@ -45,6 +41,7 @@ function openGoogleTranslate2() {
 }
 //st -> Search google Translate
 mapkey('st', 'Translate selected text with google translate', openGoogleTranslate2);
+
 
 
 //------------------------------------------------------------------------------
