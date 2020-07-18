@@ -104,17 +104,23 @@ settings.theme = `
 .sk_theme .omnibar_visitcount {
     color: #98c379;
 }
-.sk_theme #sk_omnibarSearchResult>ul>li:nth-child(odd) {
+.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
     background: #303030;
 }
-.sk_theme #sk_omnibarSearchResult>ul>li.focused {
-    background: #3e4452;
+.sk_theme #sk_omnibarSearchResult ul li.focused {
+    background-color: rgba(255,255,255,0.4);  //rgba transparent
+    font-size: 13pt;
+    color: pink;
+}
+.sk_theme .omnibar_folder {
+    color: #ffb366;
+}
+.sk_theme .omnibar_timestamp{
+    display: none;
 }
 #sk_status, #sk_find {
     font-size: 20pt;
 }`;
-
-
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 //--------------------click `Save` button to make above settings to take effect.
