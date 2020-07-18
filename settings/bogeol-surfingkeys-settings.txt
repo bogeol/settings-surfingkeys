@@ -49,13 +49,13 @@ mapkey('st', 'Translate selected text with google translate', openGoogleTranslat
 //----------------------------------------------------------------REPLACE MAPKEY
 map('gt', 'T');
 
-//1. J:forward history [new] K:backward history [old]
-map('J', 'D');
-map('K', 'S');
+//1.H:left arrow history[old] L:right arrow history[new]
+map('H', 'S');
+map('L', 'D');
 
-//2.H:left tab L:right tab
-map('H', 'E');
-map('L', 'R');
+//2.J:next tab[next line] K:previous tab[previous line]
+map('J', 'R');
+map('K', 'E');
 
 //3.st: search with google translate
 //map('st',';t');

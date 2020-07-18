@@ -30,8 +30,8 @@
 
 | 按键 |    功能    |       备注       |
 | :--: | :--------: | :--------------: |
-|  H   |  left tab  | [Ctrl+Shift+Tab] |
-|  L   | right tab  |    [Ctrl+Tab]    |
+|  K   | previous tab  | [Ctrl+Shift+Tab] |
+|  J   | next tab  |    [Ctrl+Tab]    |
 |  x   | close tab  |     [Ctrl+W]     |
 |  X   | reopen tab |  [Ctrl+Shift+T]  |
 
@@ -39,8 +39,8 @@
 
 | 按键 |       功能       |    备注     |
 | :--: | :--------------: | :---------: |
-|  J   | forward history  | ↓往下是新的 |
-|  K   | backward history | ↑往上是旧的 |
+|  H   | left history  | ←往左是旧历史 |
+|  L   | right history | →往右是新历史  |
 
 ### 4.Search
 
