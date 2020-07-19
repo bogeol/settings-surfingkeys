@@ -30,8 +30,8 @@
 
 | 按键 |    功能    |       备注       |
 | :--: | :--------: | :--------------: |
-|  H   | left tab  | [Ctrl+Shift+Tab] |
-|  L   | right tab  |    [Ctrl+Tab]    |
+|  e   | left tab  | [Ctrl+Shift+Tab] ↑ |
+|  d   | right tab  |    [Ctrl+Tab] ↓    |
 |  x   | close tab  |     [Ctrl+W]     |
 |  X   | reopen tab |  [Ctrl+Shift+T]  |
 
@@ -39,11 +39,10 @@
 
 | 按键 |       功能       |    备注     |
 | :--: | :--------------: | :---------: |
-|  J   | next history  | ↓往下是新历史 |
-|  K   | previous history | ↑往上是旧历史  |
+|  q   | previous history | ← |
+|  w   | next history  | → |
 
 ### 4.Search
-
 | 按键  |               功能                |                       备注                        |
 | :---: | :-------------------------------: | :-----------------------------------------------: |
 | so/oo | search go**o**gle/open go**o**gle | s是搜索已复制或者选中的文字/o是打开搜索栏自行输入 |

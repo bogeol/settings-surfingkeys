@@ -51,13 +51,16 @@ map('gt', 'T');
 
 //1.H:left arrow history[old] L:right arrow history[new]
 //1.J:next history[new] K:previous history[old]
-map('J', 'D');
-map('K', 'S');
+//1.q:previous history w:next history
+unmap("w");
+map('q', 'S');
+map('w', 'D');
 
 //2.J:next tab[next line] K:previous tab[previous line]
 //2.H:left tab L:right tab
-map('H', 'E');
-map('L', 'R');
+//2.e:left tab d:right tab
+map('e', 'E');
+map('d', 'R');
 
 //3.st: search with google translate
 //map('st',';t');
