@@ -9,7 +9,7 @@
 ## 一、安装配置
 
 - 安装Surfingkeys插件 -> 左键点击插件 -> Settings -> Key mappings -> Advanced mode
-- Loading settings from -> [Settings.txt](https://raw.githubusercontent.com/bogeol/surfingkeys-settings-backup/master/settings/bogeol-surfingkeys-settings.txt)
+- Loading settings from -> [Settings.txt](https://raw.githubusercontent.com/bogeol/settings-surfingkeys/master/settings/settings-surfingkeys.txt)
 - 把上面链接复制进去 -> Save
 
 ## 二、常用按键
