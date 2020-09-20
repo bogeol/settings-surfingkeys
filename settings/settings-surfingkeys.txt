@@ -56,6 +56,10 @@ unmap("w");
 map('q', 'S');
 map('w', 'D');
 
+//BEFORE2.a: scroll down c:scroll up [先将ed上下滚动赋给ac,下面再覆盖ed]
+map('c', 'e');
+map('a', 'd');
+
 //2.J:next tab[next line] K:previous tab[previous line]
 //2.H:left tab L:right tab
 //2.e:left tab d:right tab
